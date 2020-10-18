@@ -1,44 +1,36 @@
-.root{
-  background-color: #FAFAFA;
+.root {
+  background-color: #fafafa;
 }
 
-.header p
-{
+.header p {
   font-size: 14px;
-  color: #2F2E41;
+  color: #2f2e41;
   width: 70%;
   margin: 30px auto 20px;
 }
-.contact-me
-{
+.contact-me {
   min-width: 92.7%;
 }
-.contact-me-card
-{
-  background-color: #2F2E41;
+.contact-me-card {
+  background-color: #2f2e41;
 }
 
-.interested h3
-{
-  font-family: "Adelle SB", sans-serif;
+.interested h3 {
+  font-family: "adellebold", sans-serif;
   color: white;
   font-weight: 00;
 }
 
-.description
-{
+.description {
   font-size: 14px;
 }
 
-.btn-lets
-{
-  border: 3px solid #6C63FF;
+.btn-lets {
+  border: 3px solid #6c63ff;
   border-radius: 20px;
-  font-family: "Adelle SB", sans-serif;
+  font-family: "adellebold", sans-serif;
 }
 
-.btn-lets:hover
-{
-  background-color: #6C63FF;
+.btn-lets:hover {
+  background-color: #6c63ff;
 }
-
