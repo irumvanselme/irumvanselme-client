@@ -1,31 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-*
-{
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+* {
   font-family: "Nunito", sans-serif;
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
-textarea
-{
+textarea {
   resize: none;
 }
 
-::-webkit-scrollbar
-{
-  background-image: linear-gradient(to bottom, #FFE600, #E5CF08);
+::-webkit-scrollbar {
+  background-image: linear-gradient(to bottom, #ffe600, #e5cf08);
   width: 6px;
   mso-border-shadow: yes;
 }
 
-
-::-webkit-scrollbar-corner
-{
+::-webkit-scrollbar-corner {
   background-color: red;
 }
 
-::-webkit-scrollbar-thumb
-{
-  background-image: linear-gradient(to bottom, #FFE600, #2F2E41);
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #ffe600, #2f2e41);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
