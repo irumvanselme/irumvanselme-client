@@ -1,0 +1,39 @@
+*
+{
+  color: white;
+}
+
+.header
+{
+  background-color: #2F2E41;
+}
+
+.say-hello-btn
+{
+  border-width: 2px;
+}
+
+.my-nav-link
+{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fixed
+{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  animation: animated .4s;
+}
+
+@keyframes animated {
+  0% {
+    top: -70px;
+  }
+  100%
+  {
+    top: 0;
+  }
+}

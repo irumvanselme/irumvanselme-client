@@ -1,0 +1,71 @@
+<div class="root">
+  <div class="row mx-0">
+    <div class="col-lg-3 col-12 pb-5 pt-4">
+      <div class="services">
+        <h4 class="font-weight-bolder pl-4 pb-4">My services</h4>
+        <ul>
+          <li>Web Designing</li>
+          <li>Problem Analysis</li>
+          <li>Mobile Designing</li>
+          <li>Web Development</li>
+          <li>Mobile Development</li>
+          <li>Product Designing</li>
+          <li>Graphic Desigining</li>
+          <li>Photography</li>
+          <li>Photo editing and manupilation</li>
+          <li>System Desigining</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <h4 class="pt-4 pb-5 font-weight-bolder">Images</h4>
+      <div class="composition">
+        <img src="assets/grrenking.jpg" alt="photo 1" class="composition-photo composition-p1">
+        <img src="assets/hey.jpg" alt="photo 2" class="composition-photo composition-p2">
+        <img src="assets/greenmtr.jpg" alt="photo 3" class="composition-photo composition-p3">
+      </div>
+    </div>
+    <div class="col-lg-5 py-3 col-12">
+      <div class="p-2">
+        <h4 class="font-weight-bolder">Contact me</h4>
+        <form class="pt-4 text-white" autocomplete="off">
+          <div class="row">
+            <div class="col-6 form-group">
+              <label for="names" class="text-white">Full Names</label>
+              <input id="names" type="text" class="form-control">
+            </div>
+            <div class=" col-6 form-group">
+              <label for="email" class="text-white">Your Email</label>
+              <input id="email" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" class="text-white">Your Message</label>
+            <textarea id="message" rows="5" class="form-control"></textarea>
+          </div>
+          <button class="btn btn-success px-5 shadow-lg mt-3">
+            SEND
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="medias pb-3 mx-0 text-center">
+    <div class="m-lg-auto d-lg-inline-block">
+      <div class="row">
+        <a
+          *ngFor="let media of medias"
+          class="h2 active-media d-flex justify-content-between align-items-center"
+          [href]="media.to"
+        >
+          <span [class]="' mdi mdi-'+media.icon"></span>
+          <div class="label">{{ media.label }}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="designer pb-2 pr-3 text-right">
+    Designed by @ IRUMVA HABUMUGISHA Anselme
+  </div>
+</div>

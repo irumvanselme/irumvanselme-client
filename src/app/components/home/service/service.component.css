@@ -1,0 +1,50 @@
+.card-title-header
+{
+  color: #2F2E41;
+}
+
+.card-label
+{
+  color: #E5CF08;
+  font-size: 13px;
+}
+
+.my-card-body
+{
+  font-size: 14px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.btn-primary
+{
+  background-color: #2F2E41;
+  border: none;
+  font-size: 13px;
+  border-radius: 0;
+  font-family: "Lato",sans-serif;
+}
+
+.root
+{
+  transition: .5s;
+  cursor: pointer;
+}
+
+.root:hover
+{
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.10);
+  z-index: 2;
+  transform: scale(1.05) translateY(-20px);
+}
+
+.card-icon
+{
+  text-align: center;
+  font-size: 70px;
+}
+
+.card-icon span
+{
+  color: #2F2E41;
+}

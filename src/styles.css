@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+*
+{
+  font-family: "Nunito", sans-serif;
+  color: #4B4B4B;
+}
+
+textarea
+{
+  resize: none;
+}
+
+::-webkit-scrollbar
+{
+  background-image: linear-gradient(to bottom, #FFE600, #E5CF08);
+  width: 6px;
+  mso-border-shadow: yes;
+}
+
+
+::-webkit-scrollbar-corner
+{
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-image: linear-gradient(to bottom, #FFE600, #2F2E41);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
