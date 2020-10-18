@@ -4,10 +4,8 @@
 
 @font-face {
   font-family: "adellebold";
-  src: url("./assets/fonts/webfontkit-20201018-102645/adelle_bold-webfont.woff2")
-      format("woff2"),
-    url("./assets/fonts/webfontkit-20201018-102645/adelle_bold-webfont.woff")
-      format("woff");
+  src: url("./assets/fonts/adelle/adelle_bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/adelle/adelle_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
