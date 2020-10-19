@@ -1,41 +1,7 @@
 .root
 {
   background-color: #2F2E41;
-}
-
-.composition {
-  position: relative;
-  height: 350px;
-}
-
-.composition-photo {
-  width: 60%;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
-  position: absolute;
-  z-index: 1;
-  transition: all .2s;
-  outline-offset: .5rem;
-}
-.composition-photo:hover {
-  outline: .6rem solid #6C63FF;
-  transform: scale(1.1);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.9);
-  z-index: 3;
-}
-.composition-p1 {
-  left: 0;
-  top: -.75rem
-}
-.composition-p2 {
-  right: 0;
-  top: 2rem;
-}
-.composition-p3 {
-  left: 20%;
-  top: 4rem;
-}
-.composition:hover .composition-photo:not(:hover){
-  transform: scale(.9);
+  font-size: 14px;
 }
 
 label
@@ -43,11 +9,16 @@ label
   font-size: 14px;
 }
 
+.about
+{
+  font-size: 14px;
+  color: gray;
+}
+
 .form-control, .form-control:focus
 {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
-  border-radius: 5px 5px 0 0;
   border: 0;
   border-bottom: 1px solid #6C63FF;
 }
@@ -66,7 +37,7 @@ label
 
 .services ul
 {
-  list-style: square;
+  list-style-type: square;
   color: #FAFAFA;
 }
 

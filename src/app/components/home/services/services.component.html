@@ -1,18 +1,18 @@
-<div class="root py-5">
+<div class="root pb-5">
   <div class="header text-center">
     <h3 class="text-uppercase font-weight-bold">{{ title }}</h3>
     <p>I provide a lot of services but categorized in these three, For more information you may call me or message me on many platforms
       I use including facebook, messenger, instagram and many more</p>
   </div>
-  <div class="row m-0 px-lg-5 mx-lg-4 my-5 pb-5 px-2 mx-1">
-    <div *ngFor="let s of serivices" class="col-12 col-lg-4 col-md-6">
+  <div class="row m-0 px-lg-5 mx-lg-4 my-5 pb-4 px-0 mx-1 justify-content-center">
+    <div *ngFor="let s of serivices" class="col-12 col-lg-4 col-md-6 p-0">
       <app-service [name]="s.name" [lable]="s.label" [description]="s.description" icon="mdi-home"></app-service>
     </div>
   </div>
 
-  <div class="contact-me mx-lg-5 px-lg-5 position-absolute">
-    <div class="contact-me-card card text-white shadow-sm">
-      <div class="row p-4 px-5">
+  <div class="contact-me position-absolute px-lg-5 mx-lg-5 px-md-3 mx-md-3 mx-1 px-1">
+    <div class="contact-me-card card text-white shadow-lg">
+      <div class="row p-4 px-5 mx-0">
         <div class="col-lg-4 col-md-6 col-12 interested pt-1">
           <h3 class="text-md-left text-center">Intrested in doing a project togather</h3>
         </div>

@@ -5,8 +5,8 @@
     <div class="description pt-3">
       I am here to solve your problems using the above tools
     </div>
-    <div class="row skills mx-0 my-5 pb-5 align-content-stretch">
-      <div *ngFor="let skill of skills" class="col-lg-2 col-sm-6 col-md-4 col-12 m-0 p-0">
+    <div class="row skills mx-0 align-content-stretch">
+      <div *ngFor="let skill of skills" class="skill col-lg-2 col-sm-6 col-md-4 col-12 m-0 p-0">
         <div class="card card-one py-2 rounded-0 h-100">
           <div class="label">
             <div class="skill-icon" *ngIf="skill.icon"><span [class]="'mdi '+[skill.icon]"></span></div>

@@ -4,7 +4,7 @@
 }
 .root
 {
-  min-height: 90vh;
+  min-height: 650px;
   background-image: url("src/assets/anselme.jpg");
   background-size: cover;
 }

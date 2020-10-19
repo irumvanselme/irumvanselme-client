@@ -1,5 +1,6 @@
 .root {
   background-color: #fafafa;
+  position: relative;
 }
 
 .header p {
@@ -7,9 +8,6 @@
   color: #2f2e41;
   width: 70%;
   margin: 30px auto 20px;
-}
-.contact-me {
-  min-width: 92.7%;
 }
 .contact-me-card {
   background-color: #2f2e41;
