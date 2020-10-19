@@ -7,7 +7,11 @@
 }
 .answer
 {
-  min-width: 75%;
   text-align: justify;
   font-size: 14px;
+}
+
+h5
+{
+  margin-top: 120px;
 }
