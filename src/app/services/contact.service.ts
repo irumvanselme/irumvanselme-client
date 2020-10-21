@@ -11,7 +11,7 @@ import { Message } from '../interfaces/message';
 
 export class ContactService {
 
-  private apiURL = 'https://irumvanselme-apis.herokuapp.com/index.php/api/messages/';
+  private apiURL = 'https://irumvanselme-apis.herokuapp.com/api/messages/';
 
   httpOptions = {
     headers: new HttpHeaders({
