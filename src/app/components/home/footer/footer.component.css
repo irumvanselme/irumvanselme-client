@@ -1,59 +1,50 @@
-.root
-{
-  background-color: #2F2E41;
+.root {
+  background-color: #2f2e41;
   font-size: 14px;
 }
 
-label
-{
+label {
   font-size: 14px;
 }
 
-.about
-{
+.about {
   font-size: 14px;
   color: gray;
 }
 
-.form-control, .form-control:focus
-{
+.form-control,
+.form-control:focus {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
   border: 0;
-  border-bottom: 1px solid #6C63FF;
+  border-bottom: 1px solid #6c63ff;
 }
 
-.medias
-{
+.medias {
   max-width: 100%;
 }
 
-.medias span
-{
+.medias span {
   color: orange;
   display: inline-block;
   transition: 1s;
 }
 
-.services ul
-{
+.services ul {
   list-style-type: square;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
-.services li
-{
+.services li {
   color: white;
 }
 
-h4
-{
-  color: #FFE600;
+h4 {
+  color: #ffe600;
   font-size: 17px;
 }
 
-.active-media
-{
+.active-media {
   background-color: transparent;
   border-radius: 30px;
   padding: 0 10px;
@@ -62,8 +53,7 @@ h4
   cursor: pointer;
 }
 
-.active-media .label
-{
+.active-media .label {
   color: white;
   font-weight: bolder;
   font-size: 16px;
@@ -71,25 +61,21 @@ h4
   transition: 1s;
 }
 
-.active-media .label
-{
+.active-media .label {
   display: none;
 }
 
-.active-media:hover
-{
+.active-media:hover {
   background-color: grey;
   z-index: 1;
   text-decoration: none;
 }
 
-.active-media:hover .label
-{
+.active-media:hover .label {
   display: block;
   text-decoration: none;
 }
 
-.designer
-{
+.designer {
   font-size: 12px;
 }

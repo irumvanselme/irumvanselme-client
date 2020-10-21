@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-services',
@@ -25,9 +26,13 @@ export class ServicesComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  async lets_do_this(): Promise<void> {
+    sessionStorage.setItem('message_title', '5');
+    await this.router.navigateByUrl('/contact');
+  }
 }

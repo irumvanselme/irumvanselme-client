@@ -9,7 +9,7 @@
         and connect with their customers in a digital way.
       </p>
     </div>
-
+    
     <div class="col-lg-3 col-md-6 col-12 pb-5 pt-4">
       <div class="services">
         <h4 class="font-weight-bolder pl-4 pb-4">My services</h4>
@@ -31,20 +31,32 @@
     <div class="col-lg-5 py-3 col-12">
       <div class="p-2">
         <h4 class="font-weight-bolder">Contact me</h4>
-        <form class="pt-4 text-white" autocomplete="off">
+        <form class="pt-4 text-white" autocomplete="off" [formGroup]="form" (ngSubmit)="submit()">
           <div class="row">
             <div class="col-6 form-group">
               <label for="names" class="text-white">Full Names</label>
-              <input id="names" type="text" class="form-control form-control-sm">
+              <input id="names" type="text" [class]="'form-control form-control-sm '+(f.first_name.touched && f.first_name.invalid ? 'is-invalid' : '')" formControlName="first_name">
+              <span *ngIf="f.first_name.touched && f.first_name.invalid" class="invalid-feedback" role="alert">
+                <strong *ngIf="f.first_name.errors.required" class="text-danger">First name is required.</strong>
+                <strong *ngIf="f.first_name.errors.minlength" class="text-danger">First name at least less than 3 chars.</strong>
+              </span>
             </div>
             <div class=" col-6 form-group">
               <label for="email" class="text-white">Your Email</label>
-              <input id="email" type="text" class="form-control form-control-sm">
+              <input id="email" type="text" class="form-control form-control-sm" [class]="'form-control form-control-sm '+(f.email.touched && f.email.invalid ? 'is-invalid' : '')" formControlName="email">
+              <span *ngIf="f.email.touched && f.email.invalid" class="invalid-feedback" role="alert">
+                <strong *ngIf="f.email.errors.required" class="text-danger">Email is required.</strong>
+                <strong *ngIf="f.email.errors.email" class="text-danger">Email must be a valid email</strong>
+              </span>
             </div>
           </div>
           <div class="form-group">
             <label for="message" class="text-white">Your Message</label>
-            <textarea id="message" rows="4" class="form-control form-control-sm"></textarea>
+            <textarea id="message" rows="4" class="form-control form-control-sm" [class]="'form-control form-control-sm '+(f.message.touched && f.message.invalid ? 'is-invalid' : '')" formControlName="message"></textarea>
+            <span *ngIf="f.message.touched && f.message.invalid" class="invalid-feedback" role="alert">
+              <strong *ngIf="f.message.errors.required" class="text-danger">Message is required.</strong>
+              <strong *ngIf="f.message.errors.minlength" class="text-danger">Message must be at least 10 chars</strong>
+            </span>
           </div>
           <button class="btn btn-success px-5 shadow-lg mt-3">
             SEND

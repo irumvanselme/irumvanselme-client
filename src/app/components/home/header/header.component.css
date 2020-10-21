@@ -1,39 +1,33 @@
-*
-{
+* {
   color: white;
 }
 
-.header
-{
-  background-color: #2F2E41;
+.header {
+  background-color: #2f2e41;
 }
 
-.say-hello-btn
-{
+.say-hello-btn {
   border-width: 2px;
 }
 
-.my-nav-link
-{
+.my-nav-link {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.fixed
-{
+.fixed {
   position: sticky;
   top: 0;
   bottom: 0;
   z-index: 100;
-  animation: animated .4s;
+  animation: animated 0.4s;
 }
 
 @keyframes animated {
   0% {
     top: -70px;
   }
-  100%
-  {
+  100% {
     top: 0;
   }
 }

@@ -5,8 +5,8 @@
       I use including facebook, messenger, instagram and many more</p>
   </div>
   <div class="row m-0 px-lg-5 mx-lg-4 my-5 pb-4 px-0 mx-1 justify-content-center">
-    <div *ngFor="let s of serivices" class="col-12 col-lg-4 col-md-6 p-0">
-      <app-service [name]="s.name" [lable]="s.label" [description]="s.description" icon="mdi-home"></app-service>
+    <div *ngFor="let s of serivices; index as i" class="col-12 col-lg-4 col-md-6 p-0">
+      <app-service [name]="s.name" [lable]="s.label" [description]="s.description" [index]="i" icon="mdi-home"></app-service>
     </div>
   </div>
 
@@ -22,7 +22,7 @@
             relevant work samples.</p>
         </div>
         <div class="col-lg-4 col-12 text-lg-right text-center pt-1">
-          <button class="btn btn btn-lets text-white px-5 mt-3">
+          <button class="btn btn btn-lets text-white px-5 mt-3" (click)="lets_do_this()">
             Let's do this
           </button>
         </div>

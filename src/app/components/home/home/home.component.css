@@ -1,23 +1,19 @@
-*
-{
+* {
   color: white;
 }
-.root
-{
+.root {
   min-height: 650px;
   background-image: url("src/assets/anselme.jpg");
   background-size: cover;
 }
 
-.text-2
-{
+.text-2 {
   font-size: 50px;
   font-family: Ubuntu, sans-serif;
   font-weight: bolder;
-  color: #FFE600;
+  color: #ffe600;
 }
 
-.text-3
-{
+.text-3 {
   font-size: 20px;
 }

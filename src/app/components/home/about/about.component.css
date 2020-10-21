@@ -1,12 +1,10 @@
-.line
-{
+.line {
   height: 2px;
   max-width: 300px;
   background-color: gray;
 }
 
-.paragraph p
-{
+.paragraph p {
   font-size: 14px;
   max-width: 430px;
 }

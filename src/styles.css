@@ -22,7 +22,6 @@ textarea {
 ::-webkit-scrollbar {
   background-image: linear-gradient(to bottom, #ffe600, #e5cf08);
   width: 6px;
-  mso-border-shadow: yes;
 }
 
 ::-webkit-scrollbar-corner {
@@ -31,6 +30,4 @@ textarea {
 
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to bottom, #ffe600, #2f2e41);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
 }

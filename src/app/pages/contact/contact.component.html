@@ -1,0 +1,98 @@
+<div class="root">
+  <div class="row vh-100 d-flex align-items-center mx-0">
+    <div class="col-6 px-5">
+      <div class="body vh-100">
+        <div class="card contact-form-card py-2 px-3">
+          <h3 class="mt-3 mb-4 form-header">Fowards to Anselme</h3>
+          <form [formGroup]="form" (ngSubmit)="submit()" autocomplete="off">
+            <div class="form-group mb-5">
+              <label for="subject">I would like to contact you beause</label>
+              <select name="subject" id="subject" class="form-control form-control-sm" formControlName="title">
+                <option disabled selected>- - Select any reason - -</option>
+                <option *ngFor="let reason of reasons;index as i" [selected] = "i === selected">{{ reason }}</option>
+                <option value="other">Other Reason</option>
+              </select>
+              <span *ngIf="f.title.touched && f.title.invalid" class="invalid-feedback" role="alert">
+                  <strong *ngIf="f.title.errors.required" class="text-danger">Title is required.</strong>
+                </span>
+            </div>
+
+            <div class="form-group row align-items-center mx-0">
+              <div class="col-4">
+                <label for="first_name">Your First name</label>
+              </div>
+              <div class="col-8 mx-0 px-0">
+                <input id="first_name" type="text" [class]="'form-control form-control-sm ' + (f.first_name.touched && f.first_name.invalid ? 'is-invalid' : '')" formControlName="first_name">
+                <span *ngIf="f.first_name.touched && f.first_name.invalid" class="invalid-feedback" role="alert">
+                  <strong *ngIf="f.first_name.errors.required" class="text-danger">First name is required.</strong>
+                  <strong *ngIf="f.first_name.errors.minlength" class="text-danger">First name at least less than 3 chars.</strong>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group row align-items-center mx-0">
+              <div class="col-4">
+                <label for="last_name">Your Last name</label>
+              </div>
+              <div class="col-8 mx-0 px-0">
+                <input id="last_name" type="text" [class]="'form-control form-control-sm ' + (f.last_name.touched && f.last_name.invalid ? 'is-invalid' : '')" formControlName="last_name">
+                <span *ngIf="f.last_name.touched && f.last_name.invalid" class="invalid-feedback" role="alert">
+                  <strong *ngIf="f.last_name.errors.required" class="text-danger">Last Name is required.</strong>
+                  <strong *ngIf="f.last_name.errors.minlength" class="text-danger">Last at least less than 3 chars.</strong>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group row align-items-center mx-0">
+              <div class="col-4">
+                <label for="email">Your Work Email</label>
+              </div>
+              <div class="col-8 mx-0 px-0">
+                <input id="email" type="email" [class]="'form-control form-control-sm ' + (f.email.touched && f.email.invalid ? 'is-invalid' : '')" formControlName="email">
+                <span *ngIf="f.email.touched && f.email.invalid" class="invalid-feedback" role="alert">
+                  <strong *ngIf="f.email.errors.required" class="text-danger">Email is required.</strong>
+                  <strong *ngIf="f.email.errors.email" class="text-danger">Email must be a valid email</strong>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group row mx-0">
+              <div class="col-4">
+                <label for="message">Anything else</label>
+              </div>
+              <div class="col-8 mx-0 px-0">
+                <textarea id="message" type="email" [class]="'form-control form-control-sm ' + (f.message.touched && f.message.invalid ? 'is-invalid' : '')" formControlName="message" rows="5"></textarea>
+                <span *ngIf="f.message.touched && f.message.invalid" class="invalid-feedback" role="alert">
+                  <strong *ngIf="f.message.errors.required" class="text-danger">Message is required.</strong>
+                  <strong *ngIf="f.message.errors.minlength" class="text-danger">Message must be at least 10 chars</strong>
+                </span>
+              </div>
+            </div>
+            <button class="btn btn-success my-4 w-25 rounded-pill font-weight-bolder" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+          <div class="vh-100 pt-5">
+            <div class="card other-card h-100 pt-5">
+              <img src="assets/contact.png" alt="" class="img-fluid">
+              <div class="words px-5">
+                <div class="location row align-items-center">
+                  <div class="col-1">
+                    <span class="mdi mdi-google-maps"></span>
+                  </div>
+                  <div class="col-11">Kirehe, Rwanda</div>
+                </div>
+                <div class="location row align-items-center">
+                  <div class="col-1">
+                    <span class="mdi mdi-phone"></span>
+                  </div>
+                  <div class="col-11">+250 783 384 212</div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>

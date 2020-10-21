@@ -1,84 +1,68 @@
-.line
-{
+.line {
   height: 2px;
   max-width: 300px;
   background-color: gray;
 }
-.card-one
-{
+.card-one {
   text-align: center;
-  transition: .5s;
+  transition: 0.5s;
 }
-.card
-{
+.card {
   cursor: pointer;
 }
 
-.card-one:hover
-{
+.card-one:hover {
   z-index: 2;
   transform: scale(1.3);
 }
 
-.skills:hover .card
-{
+.skills:hover .card {
   opacity: 0.3;
 }
 
-.skills .card:hover
-{
+.skills .card:hover {
   filter: blur(0px);
   opacity: 1;
   transform: scale(1.4);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.card .official
-{
+.card .official {
   display: none;
   position: absolute;
 }
 
-.card .label
-{
+.card .label {
   display: block;
 }
 
-.card:hover .label
-{
+.card:hover .label {
   display: none;
 }
 
-.card:hover .official
-{
+.card:hover .official {
   display: block;
 }
 
-.skill-icon
-{
+.skill-icon {
   font-size: 50px;
 }
-.skill-icon-and-name
-{
+.skill-icon-and-name {
   font-size: 20px;
 }
-.skill-category
-{
+.skill-category {
   font-size: 11px;
 }
 
-.skill-level
-{
+.skill-level {
   font-size: 11px;
 }
 
-.description
-{
+.description {
   font-size: 14px;
   max-width: 500px;
 }
 
-.skill
-{
+.skill {
   height: 120px;
 }

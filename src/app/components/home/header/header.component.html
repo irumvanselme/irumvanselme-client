@@ -7,7 +7,7 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <div class="d-flex justify-content-between align-items-center w-100">
-      <a class="navbar-brand d-sm-none d-md-block" href="#">
+      <a class="navbar-brand d-sm-none d-md-block" routerLink="">
         <div class="d-none d-md-block">
           <img src="assets/logo-white.png" alt="">
         </div>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="d-none d-md-block">
-        <button class="say-hello-btn btn btn-lgfont-weight-bolder btn-outline-primary px-5 rounded-pill">SAY HELLO</button>
+        <button class="say-hello-btn btn btn-lgfont-weight-bolder btn-outline-primary px-5 rounded-pill" (click)="say_hello()">SAY HELLO</button>
       </div>
     </div>
   </div>
