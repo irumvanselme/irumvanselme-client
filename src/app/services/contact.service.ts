@@ -5,6 +5,8 @@ import { catchError } from 'rxjs/operators';
 
 import { Message } from '../interfaces/message';
 
+import { origin } from "../../utils/config"
+
 @Injectable({
   providedIn: 'root'
 })
@@ -18,7 +20,8 @@ export class ContactService {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
       'app-orgin': 'from_anselme',
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
+      'Origin': origin
     })
   };
 
