@@ -1,1 +1,1 @@
-export const origin = "https://www.irumvanselme.cfggg";
+export const origin = "https://www.irumvanselme.cf";
