@@ -46,7 +46,6 @@ export class ContactComponent implements OnInit {
       const conf = confirm('Are you sure you want to send the message');
       if ( conf === true ) {
         this.http.create(this.form.value).subscribe(res => {
-            console.log(res);
             this.form.reset();
             alert('Message successfully sent ! ');
           }
