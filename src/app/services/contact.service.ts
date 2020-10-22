@@ -5,14 +5,11 @@ import { catchError } from 'rxjs/operators';
 
 import { Message } from '../interfaces/message';
 
-import { origin } from '../../../temp/config'
-
 @Injectable({
   providedIn: 'root'
 })
 
 export class ContactService {
-
   private host = 'https://irumvanselme-apis.herokuapp.com';
   private apiURL = this.host + '/api/messages';
 
@@ -20,8 +17,7 @@ export class ContactService {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
       'app-orgin': 'from_anselme',
-      'Access-Control-Allow-Origin': '*',
-      'Origin': origin
+      'Access-Control-Allow-Origin': '*'
     })
   };
 
