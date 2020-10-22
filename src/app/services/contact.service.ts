@@ -5,7 +5,7 @@ import { catchError } from 'rxjs/operators';
 
 import { Message } from '../interfaces/message';
 
-import { origin } from "../../utils/config"
+import { origin } from '../../utils/config'
 
 @Injectable({
   providedIn: 'root'
