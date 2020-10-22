@@ -10,7 +10,7 @@
 # dependencies
 /node_modules
 
-config.ts
+# config.ts
 
 # profiling files
 chrome-profiler-events*.json
