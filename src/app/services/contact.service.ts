@@ -11,12 +11,14 @@ import { Message } from '../interfaces/message';
 
 export class ContactService {
 
-  private apiURL = 'https://irumvanselme-apis.herokuapp.com/api/messages/';
+  private host = 'https://irumvanselme-apis.herokuapp.com';
+  private apiURL = this.host + '/api/messages';
 
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'app-orgin': 'from_anselme'
+      'app-orgin': 'from_anselme',
+      'Access-Control-Allow-Origin': '*'
     })
   };
 
