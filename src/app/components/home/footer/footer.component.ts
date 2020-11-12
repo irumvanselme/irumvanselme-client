@@ -12,37 +12,37 @@ export class FooterComponent implements OnInit {
     {
       icon: 'facebook',
       label: 'anselme23',
-      to: ''
+      to: 'https://www.facebook.com/anselme23'
     },
     {
       icon: 'instagram',
       label: '__anselme23',
-      to: 'https://www.facebook.com/anselme23'
+      to: 'https://www.instagram.com/__anselme_23/'
     },
     {
       icon: 'twitter',
       label: 'anselme23',
-      to: 'https://www.facebook.com/anselme23'
+      to: 'https://twitter.com/officialanselme'
     },
     {
       icon: 'github',
       label: 'AnselmeIrumva',
-      to: 'https://www.facebook.com/anselme23'
+      to: 'https://www.github.com/anselme-rca'
     },
     {
       icon: 'linkedin',
       label: 'IRUMVA HABUMUGISHA Anselme',
-      to: 'https://www.facebook.com/anselme23'
+      to: 'https://www.linkedin.com/in/irumva-habumugisha-anselme-182618193/'
     },
     {
       icon: 'phone',
       label: '+250 783 384 212',
-      to: 'https://www.facebook.com/anselme23'
+      to: 'tel:0783384212'
     },
     {
       icon: 'google-maps',
       label: 'Kirehe - Rwanda',
-      to: 'https://www.facebook.com/anselme23'
+      to: "https://www.google.com/maps/place/2%C2%B015'42.6%22S+30%C2%B039'06.7%22E/@-2.2618333,30.6496671,17z/data=!3m1!4b1!4m13!1m6!3m5!1s0x19c4c5087243937d:0x242f8479cbca81de!2sKirehe+District+Office!8m2!3d-2.278229!4d30.667683!3m5!1s0x0:0x0!7e2!8m2!3d-2.261833!4d30.6518456"
     },
   ];
   form: FormGroup;
